@@ -1,5 +1,5 @@
 :root {
-    --main-text-bg-color-1: #877b7b; /**#202020*/
+
     --border-color-1: #000000; /**COOL COLOR #149b73*/
     --inner-box-shadow: #000000; /**COOL COLOR #00ffaa*/
     --padding-size: 5px/*TOP*/ 8px/*RIGHT*/ 8px/*BOTTOM*/ 8px/*LEFT*/;
@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: 'RobotoMono-Medium';
-    src: url('source/RobotoMono-Medium.ttf');
+    src: url('src/RobotoMono-Medium.ttf');
 }
 
 @font-face {
     font-family: 'RobotoMono-Light';
-    src: url(source/RobotoMono-Light.ttf);
+    src: url(src/RobotoMono-Light.ttf);
 }
 
 * {
@@ -44,7 +44,7 @@ header, footer, section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px;
     border-radius: 8px;
     border: 2px solid var(--border-color-1);
     box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
@@ -89,7 +89,6 @@ nav a {
 form label {
     display: block;
     margin-bottom: 2px;
-    margin-top: 0px;
 }
 
 form input, form textarea, form button, nav li {
@@ -98,7 +97,6 @@ form input, form textarea, form button, nav li {
     padding: var(--padding-size);
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: ;
     background: none;
     border-radius: 8px;
     border: 2px solid var(--border-color-1);
@@ -129,7 +127,9 @@ form button:active, nav li:active {
     outline: none;
 }
 
-
+h2 {
+    padding-bottom: 8px;
+}
 
 ::placeholder {
     color: #aaaaaa;
@@ -147,7 +147,12 @@ form button:active, nav li:active {
 }
 
 
+img {
+    display: flex;
+    justify-content: space-between;
 
+    width: 200px;
+}
 
 /*
 nav ul {
