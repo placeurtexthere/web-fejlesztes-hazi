@@ -1,0 +1,224 @@
+:root {
+    --main-text-bg-color-1: #877b7b; /**#202020*/
+    --border-color-1: #000000; /**COOL COLOR #149b73*/
+    --inner-box-shadow: #000000; /**COOL COLOR #00ffaa*/
+    --padding-size: 5px/*TOP*/ 8px/*RIGHT*/ 8px/*BOTTOM*/ 8px/*LEFT*/;
+
+}
+
+@font-face {
+    font-family: 'RobotoMono-Medium';
+    src: url('source/RobotoMono-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMono-Light';
+    src: url(source/RobotoMono-Light.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'RobotoMono-Medium';
+    outline: none;
+}
+
+/* ########################################################################## */
+/* ########################################################################## */
+/* ########################################################################## */
+
+body {
+    background: #b91d70;
+    background: linear-gradient(209deg, #b91d70 0%, #324498 100%);
+    padding: 0px;
+    margin: auto;
+    max-width: 1000px;
+    position: static;
+    justify-content: center;
+    height: 100vh;
+}
+
+header, footer, section {
+    background-color: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color-1);
+    box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
+    margin: 30px;
+    text-align: left;
+    display: flex;
+}
+
+section {
+    justify-content: left;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+form input, form textarea, form button, nav li {
+    width: 100%;
+    color: #ffffff;
+    padding: var(--padding-size);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: ;
+    background: none;
+    border-radius: 8px;
+    border: 2px solid var(--border-color-1);
+    box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
+    text-align: left;
+    display: flex;
+}
+
+form textarea {
+    max-width: 100%;
+    resize: vertical;
+}
+
+form input:focus, form textarea:focus {
+    animation: btnAnim 0.05s forwards;
+    outline: none;
+    -webkit-animation: btnAnim 0.05s forwards;
+}
+
+form button {
+    width: auto;
+    cursor: pointer;
+}
+
+
+form button:active, nav li:active {
+    animation: btnAnim 0.05s forwards;
+    outline: none;
+}
+
+
+
+::placeholder {
+    color: #aaaaaa;
+}
+
+@keyframes btnAnim {
+    0% {
+        box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
+        transform: translate(0px, 0px);
+    }
+    100% {
+        box-shadow: 1px 1px 0px 0px var(--inner-box-shadow);
+        transform: translate(2px, 2px);
+    }
+}
+
+
+
+
+/*
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+    padding: 2px 10px 3px 10px;
+    background: var(--main-text-bg-color-1);
+    padding: var(--padding-size);
+    border-radius: 8px;
+    border: 2px solid var(--border-color-1);
+    margin: var(--margin-size);
+    box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
+    display: flex;
+    outline: none;
+}
+
+li.menu-li:active {
+    animation: btnAnim 0.05s forwards;
+    outline: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+header, section, li.prj, footer {
+    background: var(--main-text-bg-color-1);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid var(--border-color-1);
+    box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 30px;
+}
+
+header:hover, section:hover, li.prj:hover, footer:hover {
+    animation: btnAnim 0.05s forwards;
+    outline: none;
+}
+
+nav li {
+    animation: menu-li 0.05s forwards;
+    -webkit-animation: menu-li 0.05s forwards;
+}
+
+footer {
+
+    padding: 10px 20px;
+    text-align: center;
+}
+
+@keyframes btnAnim {
+    0% {
+        box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
+        transform: translate(0px, 0px);
+    }
+    100% {
+        box-shadow: 1px 1px 0px 0px var(--inner-box-shadow);
+        transform: translate(2px, 2px);
+    }
+}
+*/
