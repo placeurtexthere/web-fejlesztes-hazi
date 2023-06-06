@@ -1,9 +1,7 @@
 :root {
-
     --border-color-1: #000000; /**COOL COLOR #149b73*/
     --inner-box-shadow: #000000; /**COOL COLOR #00ffaa*/
     --padding-size: 5px/*TOP*/ 8px/*RIGHT*/ 8px/*BOTTOM*/ 8px/*LEFT*/;
-
 }
 
 @font-face {
@@ -50,7 +48,6 @@ header, footer, section {
     box-shadow: 2.5px 2.5px 0px 0px var(--inner-box-shadow);
     margin: 30px;
     text-align: left;
-    display: flex;
 }
 
 section {
@@ -125,6 +122,7 @@ form button {
 form button:active, nav li:active {
     animation: btnAnim 0.05s forwards;
     outline: none;
+    -webkit-animation: btnAnim 0.05s forwards;
 }
 
 h2 {
@@ -150,7 +148,8 @@ h2 {
 img {
     display: flex;
     justify-content: space-between;
-
+    right: 0px;
+    top: 0px;
     width: 200px;
 }
 
@@ -196,7 +195,7 @@ header, section, li.prj, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+
     margin: 30px;
 }
 
