@@ -12,6 +12,7 @@
     <title>Illyés Dávid - Portfólió</title>
 </head>
 <body>
+
     <header>
         <h1>Portfólió</h1>
         <nav>
@@ -21,20 +22,45 @@
               <li><a href="#contact">Kapcsolat</a></li>
             </ul>
         </nav>
+
     </header>
+
     <main>
+
         <section id="about">
+
+            <img src="src/img/profile.png" alt="">
+
             <div>
                 <h2><u>Magamról:</u></h2>
-                <p>hello szia</p>
+                <p>
+                    Illyés Dávid vagyok, 22 éves, Villamosmérnök hallgató a Budapesti Műszaki és Gazdaságtudomámyi egyetemen.
+                    Jelenleg hobbi szinten foglalkozom webfejlesztéssel és apróbb asztali programok írásával. Az alábbi nyelvekkel vannak tapasztalataim:
+                </p>
+                <ul class="indent">
+                    <li>C/C++ (kezdő)</li>
+                    <li>HTML, CSS (kezdő)</li>
+                    <li>JavaScript (kezdő)</li>
+                    <li>MySQL (kezdő)</li>
+                </ul>
             </div>
-            <img src="src/img/profile.png" alt="">
+
         </section>
+
         <section id="works">
             <h2><u>Munkáim:</u></h2>
+            <p>(Feltöltés alatt...)</p>
+            <ul class="indent">
+                <li>
+                    Egy régebbi oldal, amit egy pár éve unaloműzésképp csináltam. <a target=”_blank” href="https://placeurtexthere.github.io/">Link</a>
+                </li>
+            </ul>
         </section>
+
         <section id="contact">
+
             <h2><u>Kapcsolat:</u></h2>
+
             <form action=" https://formspree.io/f/xwkyvlpj" method="POST">
                 <label for="name">Név:</label>
                 <input placeholder="Név" type="text" id="name" name="name" required>
@@ -44,11 +70,16 @@
                 <textarea placeholder="Üzenet" id="message" name="message" required></textarea>
                 <button type="submit">Üzenet küldése</button>
               </form>
+
         </section>
 
     </main>
+
     <footer>
-        <p>Készítette: Illyés Dávid @ github.com/placeurtexthere</p>
+        <div class="small">
+            <p>Készítette: Illyés Dávid @ github.com/placeurtexthere&nbsp;</p>
+            <p>Az oldal forráskódja&nbsp;</p><a href="">itt</a><p>&nbsp;található meg.</p>
+        </div>
     </footer>
 
 </body>
